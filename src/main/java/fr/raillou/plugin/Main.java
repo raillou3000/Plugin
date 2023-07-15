@@ -7,4 +7,6 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         System.out.println("Ca marche !");
     }
+
+
 }
