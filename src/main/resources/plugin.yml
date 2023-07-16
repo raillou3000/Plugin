@@ -2,3 +2,7 @@ name: PluginTest
 version: 1.0
 api-version: 1.20
 main: fr.raillou.plugin.Main
+commands:
+  meow:
+    description: Une commande pour miauler
+    usage: Erreur dans la commande
