@@ -13,7 +13,7 @@ public class CommandSetSpawn implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (label.equals("setspawn")) {
+        if (label.equalsIgnoreCase("setspawn")) {
             if (args.length == 0) {
                 if (sender instanceof Player) {
                     final Player player = (Player)sender;
@@ -25,9 +25,12 @@ public class CommandSetSpawn implements CommandExecutor {
                         Error.noEnoughtPermission((Player) sender);
                     }
                 } else {
-                    Error.commandNoNeedsArgument((Player) sender);
+                    Error.executableOnlyByPlayer((Player) sender);
                 }
+            } else {
+                Error.commandNoNeedsArgument((Player) sender);
             }
+            return true;
         }
 
         return false;

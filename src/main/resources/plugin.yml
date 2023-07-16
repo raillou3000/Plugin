@@ -6,3 +6,9 @@ commands:
   meow:
     description: Une commande pour miauler
     usage: Erreur dans la commande
+  setspawn:
+    description: Definit un point de spawn
+    usage: Erreur dans la commande
+  spawn:
+    description: Teleporte au spawn
+    usage: Erreur dans la commande

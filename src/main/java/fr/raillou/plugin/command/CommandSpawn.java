@@ -29,6 +29,7 @@ public class CommandSpawn implements CommandExecutor {
             } else {
                 Error.commandNoNeedsArgument((Player) sender);
             }
+            return true;
         }
 
         return false;
